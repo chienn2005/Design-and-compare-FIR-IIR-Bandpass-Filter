@@ -29,7 +29,7 @@ N = N + 50;
 b = firpm(N, Fo, Ao, W); 
 
 % --- 3. TẠO TÍN HIỆU ĐA TẦNG ---
-T_duration = 0.05; % Thời gian mô phỏng (ví dụ: 50 ms)
+T_duration = 0.05; % Thời gian mô phỏng
 t = 0:1/Fs:T_duration - 1/Fs; % Vector thời gian
 
 % Tín hiệu thành phần (Tín hiệu lọt dải và tín hiệu bị chặn)
@@ -128,3 +128,4 @@ fprintf('* Phổ tần số (Frequency Spectrum):\n');
 fprintf(' - Suy hao dải chặn đạt yêu cầu: >= %.1f dB\n', Astop);
 
 fprintf(' - Gợn sóng dải thông đạt yêu cầu: <= %.1f dB\n', Apass);
+
